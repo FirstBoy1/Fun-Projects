@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.jacinto.design"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="img-container">
+        <img class="music-image" src="images/jacinto-1.jpg" alt="" />
+      </div>
+      <h2 class="title"></h2>
+      <h3 class="artist"></h3>
+      <audio class="music" src="music/jacinto-1.mp3"></audio>
+      <div class="progress-container">
+        <div class="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time"></span>
+          <span id="duration"></span>
+        </div>
+      </div>
+      <div class="player-controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play main-button" id="play-pause" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
